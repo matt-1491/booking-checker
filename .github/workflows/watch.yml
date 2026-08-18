@@ -1,0 +1,20 @@
+name: Bunga 90 watcher
+
+on:
+  schedule:
+    - cron: "*/15 7-21 * * *"      # every 15 min, 08:00-22:45 UK
+    - cron: "0,15,30 22 * * *"     # 23:00, 23:15, 23:30 UK
+  workflow_dispatch:               # manual run button
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check availability
+        run: python watch.py
