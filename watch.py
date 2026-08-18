@@ -24,7 +24,7 @@ WINDOW_START = "19:00"               # earliest acceptable slot (UK time)
 WINDOW_END = "21:00"                 # latest acceptable slot (UK time)
 CENTRE_TIME = "20:00"                # midpoint of your window
 HALO = 16                            # wide net, we filter afterwards
-INCLUDE_REQUESTABLE = True           # also alert on "request" slots
+INCLUDE_REQUESTABLE = False           # also alert on "request" slots
 
 # CHANGE THIS to your own random string before you push the repo.
 NTFY_TOPIC = "kd833L290CXnMQ"
