@@ -18,7 +18,7 @@ import urllib.request
 # ---------------------------------------------------------------- CONFIG ----
 
 VENUE = "bungacoventgarden"          # SevenRooms venue slug for Bunga 90
-DATE = "09-26-2026"                  # MM-DD-YYYY, the date you want
+DATE = "08-26-2026"                  # MM-DD-YYYY, the date you want
 PARTY_SIZES = range(4, 21, 2)        # 4, 6, 8 ... 20
 WINDOW_START = "19:00"               # earliest acceptable slot (UK time)
 WINDOW_END = "21:00"                 # latest acceptable slot (UK time)
